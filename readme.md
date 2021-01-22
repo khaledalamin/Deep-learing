@@ -38,10 +38,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
+In this repo, I will try to deep learning models starting from logistic regression up to deep neural network using flexable classes and function, and libraries (Tesorflow.Keras, Pytorch) to classify and train these models and test them in a real time application
 
 
 ## Implementation
+
+For implementing these model, firstly I will try to train them using simple datasets starting from binary to multi classification problems...
 
 ### Binary classification dataset
 
@@ -54,7 +56,7 @@ Pictures of objects belonging to 101 categories. About 40 to 800 images per cate
 
 ## Dependencies 
 
-The neural network has been trained using Python 3.6. The parameters (weight & bias) of the trained neural network have been deployed in STM32F429 using C. The unclassified images (test set) are sent via virtual COMM to the STM to decide (based on the fitted model) either the image containing a car or not and display the result on the screen.
+The neural network has been trained using Python 3.6. 
 
 
 ## Installation
