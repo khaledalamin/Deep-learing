@@ -21,3 +21,11 @@ def test_download_script_mentions_websave():
     with open(DOWNLOAD_SCRIPT) as f:
         content = f.read()
     assert 'websave' in content
+
+MATLAB_FILE = os.path.join('battery_project', 'matlab', 'battery_mimic.m')
+
+def test_matlab_uses_builder_functions():
+    with open(MATLAB_FILE) as f:
+        content = f.read()
+    assert 'batteryCell' in content
+    assert 'batteryBuilder' in content

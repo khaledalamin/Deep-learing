@@ -15,5 +15,4 @@ A small sample from the dataset is still provided in `dataset/battery_sample.csv
 For more details, refer to comments in `battery_mimic.m` and the download script.
 
 ### Tests
-Run `pytest` from the repository root to perform a few sanity checks on the
-sample dataset and download script.
+Run `pytest` in this folder (or from the repository root) to perform a few sanity checks on the sample dataset, MATLAB scripts, and helper files.
