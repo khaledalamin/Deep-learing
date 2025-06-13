@@ -1,5 +1,10 @@
 import os
 import csv
+
+
+SAMPLE_FILE = os.path.join('battery_project', 'dataset', 'battery_sample.csv')
+DOWNLOAD_SCRIPT = os.path.join('battery_project', 'dataset', 'download_nasa_dataset.m')
+
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -25,6 +30,7 @@ def test_download_script_mentions_websave():
         content = f.read()
     assert 'websave' in content
 
+MATLAB_FILE = os.path.join('battery_project', 'matlab', 'battery_mimic.m')
 
 def test_matlab_uses_builder_functions():
     with open(MATLAB_FILE) as f:
