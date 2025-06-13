@@ -26,7 +26,6 @@ end
 
 % Create a battery cell based on dataset nominal values
 cell = batteryCell('GenericPouch', ...
-    'NominalVoltage', 3.7, ...
     'Capacity', 2.0);
 
 % Build a simple cell model using batteryBuilder
