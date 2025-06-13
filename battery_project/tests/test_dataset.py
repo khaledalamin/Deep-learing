@@ -1,8 +1,16 @@
 import os
 import csv
 
+
 SAMPLE_FILE = os.path.join('battery_project', 'dataset', 'battery_sample.csv')
 DOWNLOAD_SCRIPT = os.path.join('battery_project', 'dataset', 'download_nasa_dataset.m')
+
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parents[1]
+SAMPLE_FILE = BASE_DIR / 'dataset' / 'battery_sample.csv'
+DOWNLOAD_SCRIPT = BASE_DIR / 'dataset' / 'download_nasa_dataset.m'
+MATLAB_FILE = BASE_DIR / 'matlab' / 'battery_mimic.m'
 
 
 def test_sample_file_exists():
