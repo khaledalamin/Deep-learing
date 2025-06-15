@@ -1,6 +1,9 @@
 import os
 import csv
 
+SAMPLE_FILE = os.path.join('battery_project', 'dataset', 'battery_sample.csv')
+DOWNLOAD_SCRIPT = os.path.join('battery_project', 'dataset', 'download_nasa_dataset.m')
+
 
 SAMPLE_FILE = os.path.join('battery_project', 'dataset', 'battery_sample.csv')
 DOWNLOAD_SCRIPT = os.path.join('battery_project', 'dataset', 'download_nasa_dataset.m')
@@ -36,4 +39,5 @@ def test_matlab_uses_builder_functions():
     with open(MATLAB_FILE) as f:
         content = f.read()
     assert 'batteryCell' in content
+    assert 'batteryBuilder' in content
     assert 'batteryBuilder' in content
