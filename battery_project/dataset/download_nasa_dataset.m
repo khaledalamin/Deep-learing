@@ -8,8 +8,9 @@
 % sufficient disk space and a stable internet connection.
 
 url = 'https://ti.arc.nasa.gov/c/13/'; % URL may change; update if needed
-zipFile = fullfile('dataset','NASA_Battery_Data.zip');
-outputDir = fullfile('dataset','nasa_raw');
+scriptDir = fileparts(mfilename('fullpath'));
+zipFile   = fullfile(scriptDir, 'NASA_Battery_Data.zip');
+outputDir = fullfile(scriptDir, 'nasa_raw');
 
 if ~isfolder(outputDir)
     mkdir(outputDir);
